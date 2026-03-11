@@ -3,16 +3,16 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Github, Mail, ArrowUpRight, Copy, Check } from "lucide-react";
+import { Mail, ArrowUpRight, Copy, Check } from "lucide-react";
 
-const EMAIL = "naoto@example.com";
+const EMAIL = "naoto.m.dev@gmail.com";
 
 const contacts = [
   {
     label: "X",
-    handle: "@naoto_dev",
+    handle: "@naoto_dev_jp",
     description: "日々の制作や気になったことをつぶやいています。",
-    href: "#",
+    href: "https://x.com/naoto_dev_jp?s=21",
     color: "hover:border-[#3a3a3a] hover:bg-white/5",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[#f5f5f5]">
@@ -21,22 +21,15 @@ const contacts = [
     ),
   },
   {
-    label: "GitHub",
-    handle: "naoto",
-    description: "個人開発のコードを公開しています。",
-    href: "#",
-    color: "hover:border-[#3a3a3a] hover:bg-white/5",
-    icon: <Github size={16} className="text-[#f5f5f5]" />,
-  },
-  {
     label: "note",
-    handle: "naoto_note",
+    handle: "naoto_dev_jp",
     description: "制作の記録を書いていく予定です。",
-    href: "#",
+    href: "https://note.com/naoto_dev_jp",
     color: "hover:border-emerald-500/30 hover:bg-emerald-500/5",
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" style={{ color: "#41C9B4" }}>
-        <path d="M18.5 0h-13C2.46 0 0 2.46 0 5.5v13C0 21.54 2.46 24 5.5 24h13c3.04 0 5.5-2.46 5.5-5.5v-13C24 2.46 21.54 0 18.5 0zm-2.1 13.28H7.6a.72.72 0 0 1 0-1.44h8.8a.72.72 0 0 1 0 1.44zm0-3.56H7.6a.72.72 0 0 1 0-1.44h8.8a.72.72 0 0 1 0 1.44z" />
+      <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4">
+        <circle cx="12" cy="12" r="12" fill="white" />
+        <path d="M6.5 18V7.5h3.1l.3 1.4c.6-1.05 1.65-1.65 2.95-1.65 2.2 0 3.45 1.35 3.45 3.65V18h-3.1v-6c0-1.05-.46-1.72-1.28-1.72-.9 0-1.55.72-1.55 1.82V18H6.5z" fill="#000" />
       </svg>
     ),
   },
@@ -66,7 +59,7 @@ function MailCard({ index }: { index: number }) {
         </div>
         <button
           onClick={handleCopy}
-          className="flex items-center gap-1 text-xs text-[#555] hover:text-[#a3a3a3] transition-colors"
+          className="flex items-center gap-1 text-xs text-[#777] hover:text-[#f5f5f5] transition-colors"
           aria-label="メールアドレスをコピー"
         >
           {copied ? (
@@ -84,7 +77,7 @@ function MailCard({ index }: { index: number }) {
       </div>
       <a
         href={`mailto:${EMAIL}`}
-        className="text-[#555] text-xs mb-1 font-mono hover:text-[#a3a3a3] transition-colors"
+        className="text-[#999] text-xs mb-1 font-mono hover:text-[#f5f5f5] transition-colors"
       >
         {EMAIL}
       </a>

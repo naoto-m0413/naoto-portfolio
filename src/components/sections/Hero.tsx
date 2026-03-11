@@ -1,25 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Smartphone, Globe } from "lucide-react";
+import { Smartphone, Globe } from "lucide-react";
 import Image from "next/image";
 import { apps } from "@/data/apps";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[80vh] md:min-h-[88vh] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[72vh] md:min-h-[88vh] flex flex-col justify-center overflow-hidden">
 
       {/* Background — animated drifting orbs */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
           transition={{ repeat: Infinity, duration: 12, ease: "easeInOut" }}
-          className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full bg-blue-600/6 blur-[110px]"
+          className="hidden lg:block absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full bg-blue-600/6 blur-[110px]"
         />
         <motion.div
           animate={{ x: [0, -30, 0], y: [0, 40, 0] }}
           transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 3 }}
-          className="absolute bottom-1/3 right-1/4 w-[320px] h-[320px] rounded-full bg-blue-800/5 blur-[90px]"
+          className="hidden lg:block absolute bottom-1/3 right-1/4 w-[320px] h-[320px] rounded-full bg-blue-800/5 blur-[90px]"
         />
         <div
           className="absolute inset-0 opacity-[0.018]"
@@ -30,18 +30,18 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 pt-20 md:pt-24 pb-12 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 pt-20 md:pt-24 pb-6 md:pb-12 w-full">
+        <div className="grid lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12 items-center">
 
           {/* Left: Main content */}
-          <div className="max-w-xl">
+          <div className="max-w-xl lg:mx-auto">
 
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.55 }}
-              className="flex items-center gap-3 mb-8"
+              className="flex items-center gap-3 mb-5 md:mb-8"
             >
               <div className="flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
@@ -83,10 +83,10 @@ export function Hero() {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.7, ease: "easeOut" }}
-              className="text-[#a3a3a3] text-sm md:text-base max-w-md leading-relaxed mb-10 border-l-2 border-[#2a2a2a] pl-4"
+              className="text-[#a3a3a3] text-sm md:text-base max-w-md leading-relaxed mb-8 md:mb-10 border-l-2 border-[#2a2a2a] pl-4"
             >
-              iOSアプリとWebを個人で制作しています。
-              課題を見つけてプロダクトを作り、使いながら改善することを習慣にしています。
+              iOSアプリやWebサイトを個人で制作しています。
+              課題を見つけて形にし、使いながら改善していくことを大切にしています。
             </motion.p>
 
             {/* CTA Buttons */}
@@ -103,7 +103,7 @@ export function Hero() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200 shadow-lg shadow-blue-900/30"
               >
                 <Smartphone size={15} />
-                Apps を見る
+                アプリを見る
               </motion.a>
               <motion.a
                 href="#works"
@@ -119,7 +119,7 @@ export function Hero() {
           </div>
 
           {/* Right: App previews — PC only */}
-          <div className="hidden lg:flex flex-col gap-3">
+          <div className="hidden lg:flex flex-col gap-2.5">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -141,23 +141,23 @@ export function Hero() {
                 }}
               >
                 <motion.div
-                  animate={{ y: [0, -8, 0] }}
+                  animate={{ y: [0, -6, 0] }}
                   transition={{
                     repeat: Infinity,
                     duration: 3.5 + i * 0.9,
                     ease: "easeInOut",
                     delay: i * 1.6,
                   }}
-                  whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-                  className="p-4 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-blue-500/30 transition-colors duration-300 cursor-default"
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                  className="p-3.5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-blue-500/30 transition-colors duration-300 cursor-default"
                 >
-                  <div className="flex items-center gap-3 mb-3">
+                  <div className="flex items-center gap-3 mb-2.5">
                     {app.icon && (
                       <Image
                         src={app.icon}
                         alt={`${app.name} アイコン`}
-                        width={48}
-                        height={48}
+                        width={40}
+                        height={40}
                         className="rounded-xl flex-shrink-0"
                       />
                     )}
@@ -189,20 +189,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 7, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        >
-          <ArrowDown size={16} className="text-[#3a3a3a]" />
-        </motion.div>
-      </motion.div>
 
     </section>
   );

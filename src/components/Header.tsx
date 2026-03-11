@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Github, Mail } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -14,7 +14,7 @@ const navItems = [
 const socialLinks = [
   {
     label: "X",
-    href: "#",
+    href: "https://x.com/naoto_dev_jp?s=21",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.857L1.254 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -22,23 +22,18 @@ const socialLinks = [
     ),
   },
   {
-    label: "GitHub",
-    href: "#",
-    icon: <Github className="w-3.5 h-3.5" />,
-  },
-  {
     label: "note",
-    href: "#",
+    href: "https://note.com/naoto_dev_jp",
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5" style={{ color: "#41C9B4" }}>
-        <path d="M18.5 0h-13C2.46 0 0 2.46 0 5.5v13C0 21.54 2.46 24 5.5 24h13c3.04 0 5.5-2.46 5.5-5.5v-13C24 2.46 21.54 0 18.5 0zm-2.1 13.28H7.6a.72.72 0 0 1 0-1.44h8.8a.72.72 0 0 1 0 1.44zm0-3.56H7.6a.72.72 0 0 1 0-1.44h8.8a.72.72 0 0 1 0 1.44z" />
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
+        <path d="M6.5 18V7.5h3.1l.3 1.4c.6-1.05 1.65-1.65 2.95-1.65 2.2 0 3.45 1.35 3.45 3.65V18h-3.1v-6c0-1.05-.46-1.72-1.28-1.72-.9 0-1.55.72-1.55 1.82V18H6.5z" />
       </svg>
     ),
   },
   {
     label: "Mail",
-    href: "mailto:naoto@example.com",
-    icon: <Mail className="w-3.5 h-3.5 text-blue-400" />,
+    href: "mailto:naoto.m.dev@gmail.com",
+    icon: <Mail className="w-3.5 h-3.5" />,
   },
 ];
 
