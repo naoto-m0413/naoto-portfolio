@@ -5,7 +5,7 @@ export type Work = {
   description: string;
   challenge: string;
   techs: string[];
-  status: "制作予定" | "制作中" | "公開中";
+  status: "制作予定" | "制作中" | "開発中" | "公開中";
   links: {
     site?: string;
     github?: string;
@@ -14,15 +14,15 @@ export type Work = {
 
 export const works: Work[] = [
   {
-    id: "typing-game",
-    title: "ネットミーム タイピングゲーム",
+    id: "teijitaiping",
+    title: "定時退ピング",
     category: "ゲーム",
-    status: "制作予定",
+    status: "開発中",
     description:
-      "インターネットで広まったフレーズやネットスラングをタイピングするゲーム。問題の構成やテンポ感など、細部の設計を含めて企画段階。",
+      "仕事をタイピングで片付けて、定時退社を目指す社会人ネタのブラウザゲーム。難易度はホワイト企業・ふつう企業・ブラック企業の3段階。ランダムイベントや称号など、ネタ性と達成感を両立させた設計。",
     challenge:
-      "タイピング精度・スピードの計測ロジックと、テンポよく次の問題へ進む操作感が鍵になる。問題データの設計や選定も含めて検討中。",
-    techs: ["Next.js", "TypeScript", "Tailwind CSS"],
+      "かなエンジンによる柔軟なローマ字入力対応と、タイピング成績をゲーム内時間に変換する時間計算ロジックの設計が核になった。結果画面をスクリーンショットでシェアしたくなる構成にすることも意識した。",
+    techs: ["HTML", "CSS", "JavaScript"],
     links: {},
   },
 ];
