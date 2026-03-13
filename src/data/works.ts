@@ -6,6 +6,7 @@ export type Work = {
   challenge: string;
   techs: string[];
   status: "制作予定" | "制作中" | "開発中" | "公開中";
+  image?: string;
   links: {
     site?: string;
     github?: string;
@@ -18,6 +19,7 @@ export const works: Work[] = [
     title: "定時退ピング",
     category: "ゲーム",
     status: "開発中",
+    image: "/works/teijitaiping.png",
     description:
       "仕事をタイピングで片付けて、定時退社を目指す社会人ネタのブラウザゲーム。難易度はホワイト企業・ふつう企業・ブラック企業の3段階。ランダムイベントや称号など、ネタ性と達成感を両立させた設計。",
     challenge:

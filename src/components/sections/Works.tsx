@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { works } from "@/data/works";
+import Image from "next/image";
 import { ExternalLink, Github, ImageIcon } from "lucide-react";
 
 const categoryColors: Record<string, string> = {
@@ -34,12 +35,16 @@ function WorkCard({ work }: { work: (typeof works)[number] }) {
       {/* Thumbnail */}
       <div className="relative h-44 bg-[#111] border-b border-[#2a2a2a] overflow-hidden flex-shrink-0">
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-12 h-12 rounded-xl bg-[#1a1a1a] border border-[#2a2a2a] flex items-center justify-center mx-auto mb-3">
-              <ImageIcon size={22} className="text-[#3a3a3a]" />
+          {work.image ? (
+            <Image src={work.image} alt={work.title} fill className="object-cover object-top" />
+          ) : (
+            <div className="text-center">
+              <div className="w-12 h-12 rounded-xl bg-[#1a1a1a] border border-[#2a2a2a] flex items-center justify-center mx-auto mb-3">
+                <ImageIcon size={22} className="text-[#3a3a3a]" />
+              </div>
+              <span className="text-[#3a3a3a] text-xs">Preview</span>
             </div>
-            <span className="text-[#3a3a3a] text-xs">Preview</span>
-          </div>
+          )}
         </div>
         <div className="absolute top-3 left-3 flex gap-2">
           <span className={`px-2.5 py-1 text-xs rounded-full border font-medium ${categoryColors[work.category] ?? "text-[#a3a3a3] bg-[#1a1a1a] border-[#2a2a2a]"}`}>
