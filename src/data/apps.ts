@@ -6,7 +6,7 @@ export type App = {
   problem: string;
   challenge: string;
   techs: string[];
-  status: "公開中" | "開発中" | "β版";
+  status: "公開中" | "開発中" | "β版" | "審査中";
   icon?: string;
   links: {
     demo?: string;
@@ -27,7 +27,7 @@ export const apps: App[] = [
     challenge:
       "シンプルに見せながら、必要な情報を適切なタイミングで出す設計を意識している。起動してすぐ動けるUXを目指している。",
     techs: ["Swift", "SwiftUI"],
-    status: "開発中",
+    status: "審査中",
     icon: "/apps/atodevaru.png",
     links: {},
   },
