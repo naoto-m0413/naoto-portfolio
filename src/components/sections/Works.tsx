@@ -17,6 +17,7 @@ const categoryColors: Record<string, string> = {
 const statusStyles: Record<string, string> = {
   制作予定: "bg-[#1a1a1a] text-[#555] border-[#2a2a2a]",
   制作中: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+  開発中: "bg-blue-500/10 text-blue-400 border-blue-500/20",
   公開中: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
 };
 
