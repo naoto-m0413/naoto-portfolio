@@ -8,8 +8,16 @@ import { ExternalLink, Github } from "lucide-react";
 
 const statusStyles: Record<string, string> = {
   公開中: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+  審査中: "bg-violet-500/10 text-violet-400 border-violet-500/20",
   開発中: "bg-amber-500/10 text-amber-400 border-amber-500/20",
   β版: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+};
+
+const statusLinkLabel: Record<string, string> = {
+  公開中: "App Storeで公開中",
+  審査中: "審査中につきリンク準備中",
+  開発中: "開発中につきリンク準備中",
+  β版: "準備中",
 };
 
 function AppCard({ app }: { app: (typeof apps)[number] }) {
@@ -92,7 +100,7 @@ function AppCard({ app }: { app: (typeof apps)[number] }) {
               )}
             </>
           ) : (
-            <span className="text-xs text-[#3a3a3a]">開発中につきリンク準備中</span>
+            <span className="text-xs text-[#3a3a3a]">{statusLinkLabel[app.status] ?? "準備中"}</span>
           )}
         </div>
 

@@ -126,7 +126,7 @@ export function Hero() {
               transition={{ delay: 0.65, duration: 0.5 }}
               className="text-[#555] text-xs uppercase tracking-widest mb-2"
             >
-              開発中のアプリ
+              制作しているアプリ
             </motion.p>
 
             {apps.map((app, i) => (
