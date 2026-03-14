@@ -164,7 +164,12 @@ export function Hero() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between gap-2">
                         <p className="text-[#f5f5f5] font-semibold text-sm truncate">{app.name}</p>
-                        <span className="flex-shrink-0 text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">
+                        <span className={`flex-shrink-0 text-xs px-2 py-0.5 rounded-full border ${
+                          app.status === "公開中" ? "text-emerald-400 bg-emerald-500/10 border-emerald-500/20" :
+                          app.status === "審査中" ? "text-violet-400 bg-violet-500/10 border-violet-500/20" :
+                          app.status === "β版"   ? "text-blue-400 bg-blue-500/10 border-blue-500/20" :
+                          "text-amber-400 bg-amber-500/10 border-amber-500/20"
+                        }`}>
                           {app.status}
                         </span>
                       </div>
