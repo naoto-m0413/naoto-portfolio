@@ -25,8 +25,6 @@ export const works: Work[] = [
     challenge:
       "かなエンジンによる柔軟なローマ字入力対応と、タイピング成績をゲーム内時間に変換する時間計算ロジックの設計が核になった。結果画面をスクリーンショットでシェアしたくなる構成にすることも意識した。",
     techs: ["HTML", "CSS", "JavaScript"],
-    links: {
-      site: "https://teijitaiping.vercel.app/",
-    },
+    links: {},
   },
 ];
