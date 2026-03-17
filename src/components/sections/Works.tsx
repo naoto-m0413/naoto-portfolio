@@ -42,6 +42,11 @@ function WorkCard({ work }: { work: (typeof works)[number] }) {
         <span className={`px-2.5 py-1 text-xs rounded-full border font-medium ${statusStyles[work.status] ?? "bg-[#1a1a1a] text-[#555] border-[#2a2a2a]"}`}>
           {work.status}
         </span>
+        {work.badge && (
+          <span className="px-2.5 py-1 text-xs rounded-full border font-medium text-[#a3a3a3] bg-[#1a1a1a] border-[#2a2a2a]">
+            {work.badge}
+          </span>
+        )}
       </div>
 
       {/* Thumbnail */}
