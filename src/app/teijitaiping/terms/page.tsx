@@ -47,6 +47,15 @@ export default function TermsPage() {
         </div>
 
         <p className="text-[#555] text-xs mt-12">最終更新：2026年3月</p>
+
+        <div className="mt-8">
+          <a
+            href="https://naoto-dev.vercel.app"
+            className="inline-flex items-center gap-2 text-sm text-[#a3a3a3] hover:text-[#f5f5f5] transition-colors"
+          >
+            ← ポートフォリオに戻る
+          </a>
+        </div>
       </div>
     </div>
   );
