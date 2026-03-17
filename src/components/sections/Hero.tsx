@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Smartphone, Globe } from "lucide-react";
 import Image from "next/image";
 import { apps } from "@/data/apps";
+import { works } from "@/data/works";
 
 export function Hero() {
   return (
@@ -118,7 +119,7 @@ export function Hero() {
 
           </div>
 
-          {/* Right: App previews — PC only */}
+          {/* Right: App + Work previews — PC only */}
           <div className="hidden lg:flex flex-col gap-2.5">
             <motion.p
               initial={{ opacity: 0 }}
@@ -126,7 +127,7 @@ export function Hero() {
               transition={{ delay: 0.65, duration: 0.5 }}
               className="text-[#555] text-xs uppercase tracking-widest mb-2"
             >
-              制作しているアプリ
+              iOSアプリ
             </motion.p>
 
             {apps.map((app, i) => (
@@ -187,6 +188,71 @@ export function Hero() {
                     ))}
                   </div>
                 </motion.div>
+              </motion.div>
+            ))}
+
+            {/* Divider + Web works */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.78 + apps.length * 0.18 + 0.1, duration: 0.5 }}
+              className="text-[#555] text-xs uppercase tracking-widest mt-1 mb-0.5"
+            >
+              ブラウザゲーム
+            </motion.p>
+
+            {works.filter((w) => w.status === "公開中").map((work, i) => (
+              <motion.div
+                key={work.id}
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  delay: 0.78 + apps.length * 0.18 + 0.2 + i * 0.18,
+                  duration: 0.65,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                <motion.a
+                  href={work.links.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 4.2 + i * 0.9,
+                    ease: "easeInOut",
+                    delay: i * 2,
+                  }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                  className="block p-3.5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-amber-500/30 transition-colors duration-300 overflow-hidden"
+                >
+                  <div className="flex items-center gap-3 mb-2.5">
+                    {work.image && (
+                      <div className="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 relative">
+                        <Image src={work.image} alt={work.title} fill className="object-cover object-top" />
+                      </div>
+                    )}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-[#f5f5f5] font-semibold text-sm truncate">{work.title}</p>
+                        <span className="flex-shrink-0 text-xs px-2 py-0.5 rounded-full border text-emerald-400 bg-emerald-500/10 border-emerald-500/20">
+                          {work.status}
+                        </span>
+                      </div>
+                      <p className="text-[#a3a3a3] text-xs mt-0.5 truncate">{work.category}</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-1.5">
+                    {work.techs.map((t) => (
+                      <span
+                        key={t}
+                        className="text-xs text-[#555] bg-[#0b0b0b] border border-[#2a2a2a] px-2 py-0.5 rounded"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </motion.a>
               </motion.div>
             ))}
           </div>
