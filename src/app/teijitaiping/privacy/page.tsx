@@ -41,7 +41,11 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-[#f5f5f5] font-semibold mb-2">お問い合わせ</h2>
-            <p>本ポリシーに関するお問い合わせは、開発者（X: <a href="https://x.com/naoto_dev_jp" className="text-blue-400 hover:underline" target="_blank" rel="noreferrer">@naoto_dev_jp</a>）までご連絡ください。</p>
+            <p>本ポリシーに関するお問い合わせは以下までご連絡ください。</p>
+            <ul className="mt-2 space-y-1">
+              <li>X: <a href="https://x.com/naoto_dev_jp" className="text-blue-400 hover:underline" target="_blank" rel="noreferrer">@naoto_dev_jp</a></li>
+              <li>Mail: <a href="mailto:naoto.m.dev@gmail.com" className="text-blue-400 hover:underline">naoto.m.dev@gmail.com</a></li>
+            </ul>
           </section>
         </div>
 

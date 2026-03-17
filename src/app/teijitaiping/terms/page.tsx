@@ -41,7 +41,16 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-[#f5f5f5] font-semibold mb-2">第6条（準拠法）</h2>
+            <h2 className="text-[#f5f5f5] font-semibold mb-2">第6条（お問い合わせ）</h2>
+            <p>本規約に関するお問い合わせは以下までご連絡ください。</p>
+            <ul className="mt-2 space-y-1">
+              <li>X: <a href="https://x.com/naoto_dev_jp" className="text-blue-400 hover:underline" target="_blank" rel="noreferrer">@naoto_dev_jp</a></li>
+              <li>Mail: <a href="mailto:naoto.m.dev@gmail.com" className="text-blue-400 hover:underline">naoto.m.dev@gmail.com</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-[#f5f5f5] font-semibold mb-2">第7条（準拠法）</h2>
             <p>本規約は日本法に準拠します。</p>
           </section>
         </div>
