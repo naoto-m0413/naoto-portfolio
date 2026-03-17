@@ -239,7 +239,7 @@ export function Hero() {
                           {work.status}
                         </span>
                       </div>
-                      <p className="text-[#a3a3a3] text-xs mt-0.5 truncate">{work.category}</p>
+                      <p className="text-[#a3a3a3] text-xs mt-0.5 truncate">{work.tagline ?? work.category}</p>
                     </div>
                   </div>
                   <div className="flex gap-1.5">

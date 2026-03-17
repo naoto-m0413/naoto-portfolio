@@ -2,6 +2,7 @@ export type Work = {
   id: string;
   title: string;
   category: "LP" | "ポートフォリオ" | "UIデザイン" | "Webサイト" | "ゲーム";
+  tagline?: string;
   description: string;
   problem: string;
   challenge: string;
@@ -21,6 +22,7 @@ export const works: Work[] = [
     title: "定時退ピング",
     category: "ゲーム",
     status: "公開中",
+    tagline: "タイピングで仕事をさばいて、最速退勤を目指すゲーム",
     image: "/works/teijitaiping.png",
     description:
       "タイピングで仕事をさばいて、最速退勤を目指す社会人ネタのブラウザゲームです。難易度はホワイト企業・ふつう企業・ブラック企業の3段階で、称号やシェア機能を備えています。",
