@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { ArrowUpRight, Clock } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { articles } from "@/data/articles";
 
 export function Articles() {
@@ -49,13 +49,9 @@ export function Articles() {
                 {article.excerpt}
               </p>
 
-              {/* Bottom: date + read time */}
+              {/* Bottom: date */}
               <div className="flex items-center gap-3 text-xs text-[#555]">
                 <span>{article.date.replace(/-/g, ".")}</span>
-                <span className="flex items-center gap-1">
-                  <Clock size={11} />
-                  {article.readTime}
-                </span>
               </div>
             </motion.a>
           ))}
