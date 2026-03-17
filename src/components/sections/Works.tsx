@@ -68,7 +68,12 @@ function WorkCard({ work }: { work: (typeof works)[number] }) {
         </div>
 
         <div>
-          <p className="text-xs text-[#555] uppercase tracking-wider mb-1.5 font-medium">考えていること</p>
+          <p className="text-xs text-[#555] uppercase tracking-wider mb-1.5 font-medium">課題・目的</p>
+          <p className="text-[#a3a3a3] text-xs leading-relaxed">{work.problem}</p>
+        </div>
+
+        <div>
+          <p className="text-xs text-[#555] uppercase tracking-wider mb-1.5 font-medium">工夫した点</p>
           <p className="text-[#a3a3a3] text-xs leading-relaxed">{work.challenge}</p>
         </div>
 
