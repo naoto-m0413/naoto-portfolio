@@ -18,7 +18,7 @@ export type App = {
 export const apps: App[] = [
   {
     id: "atodevaru",
-    name: "今やる",
+    name: "アトデヤル",
     tagline: "行動できるToDoリスト",
     description:
       "大学生活の中で感じていた「やることはあるのに、なかなか動けない」という悩みをきっかけに作ったiOS向けToDoアプリです。「今やること」を1つだけ前に出し、カードUIとタイマーによって迷わず着手しやすくすることを目指しています。",
