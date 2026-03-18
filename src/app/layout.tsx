@@ -9,6 +9,21 @@ export const metadata: Metadata = {
     title: "Naoto | Portfolio",
     description: "アプリを作り、発信し、形にしていく人のポートフォリオサイト。",
     type: "website",
+    url: "https://naoto-dev.vercel.app",
+    images: [
+      {
+        url: "https://naoto-dev.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Naoto | Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Naoto | Portfolio",
+    description: "アプリを作り、発信し、形にしていく人のポートフォリオサイト。",
+    images: ["https://naoto-dev.vercel.app/og-image.png"],
   },
 };
 
