@@ -16,12 +16,28 @@ export default function PrivacyPage() {
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>アクセス解析情報（Vercel Analytics による匿名の利用統計）</li>
               <li>ゲームの自己ベスト・プレイ記録（お使いのブラウザの localStorage に保存）</li>
+              <li>広告配信のためのCookie情報（Google AdSense による）</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-[#f5f5f5] font-semibold mb-2">収集しない情報</h2>
             <p>本サービスは氏名・メールアドレスなどの個人を特定できる情報を収集しません。ユーザー登録やアカウント機能はありません。</p>
+          </section>
+
+          <section>
+            <h2 className="text-[#f5f5f5] font-semibold mb-2">広告の配信について</h2>
+            <p>本サービスはGoogle AdSenseを利用した広告を掲載しています。GoogleはCookieを使用して、ユーザーが本サービスや他のサイトを過去に訪問した際の情報に基づいて広告を配信します。</p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>Googleが広告Cookieを使用することにより、ユーザーが本サービスや他のサイトにアクセスした際の情報に基づいて広告が表示されます。</li>
+              <li>ユーザーはGoogleの広告設定ページからパーソナライズ広告を無効にできます。</li>
+              <li>詳細はGoogleの<a href="https://policies.google.com/technologies/ads" className="text-blue-400 hover:underline" target="_blank" rel="noreferrer">広告ポリシー</a>をご確認ください。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-[#f5f5f5] font-semibold mb-2">Cookieについて</h2>
+            <p>本サービスはCookieを使用しています。CookieはWebサイトがお使いのブラウザに保存する小さなデータファイルです。Google AdSenseによる広告配信のために使用されます。ブラウザの設定からCookieを無効にすることができますが、一部機能が正常に動作しない場合があります。</p>
           </section>
 
           <section>
@@ -36,7 +52,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-[#f5f5f5] font-semibold mb-2">第三者への提供</h2>
-            <p>収集した情報を第三者に販売・提供することはありません。</p>
+            <p>収集した情報を第三者に販売・提供することはありません。ただし、Google AdSenseの広告配信にあたり、Googleが定めるプライバシーポリシーに基づいてデータが処理される場合があります。</p>
           </section>
 
           <section>
@@ -49,7 +65,7 @@ export default function PrivacyPage() {
           </section>
         </div>
 
-        <p className="text-[#555] text-xs mt-12">最終更新：2026年3月</p>
+        <p className="text-[#555] text-xs mt-12">最終更新：2026年3月（Google AdSense対応）</p>
 
         <div className="mt-8">
           <a
