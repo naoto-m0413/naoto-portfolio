@@ -235,6 +235,17 @@ export default function CommunityPage() {
           </a>
         </section>
 
+        {/* Contact link */}
+        <section className="text-center space-y-2">
+          <p className="text-sm text-[#a3a3a3]">質問や不明点があればお気軽にどうぞ</p>
+          <Link
+            href="/#contact"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a3a3a3] border border-[#2a2a2a] px-5 py-2.5 rounded-lg hover:text-[#f5f5f5] hover:border-[#444] transition-colors duration-200"
+          >
+            お問い合わせ →
+          </Link>
+        </section>
+
       </main>
 
       {/* Sticky bottom bar */}
