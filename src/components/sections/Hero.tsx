@@ -124,7 +124,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.88, duration: 0.6, ease: "easeOut" }}
               whileHover={{ borderColor: "rgba(59,130,246,0.4)", backgroundColor: "rgba(59,130,246,0.05)" }}
-              className="hidden lg:flex items-center gap-3 mt-5 px-4 py-3 rounded-xl border border-[#2a2a2a] bg-[#171717]/60 transition-colors duration-200 group w-fit"
+              className="flex items-center gap-3 mt-5 px-4 py-3 rounded-xl border border-[#2a2a2a] bg-[#171717]/60 transition-colors duration-200 group w-fit"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
               <span className="text-sm text-[#a3a3a3] group-hover:text-[#f5f5f5] transition-colors duration-200">

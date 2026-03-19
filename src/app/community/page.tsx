@@ -164,7 +164,7 @@ export default function CommunityPage() {
             <br />聞くだけの参加も大歓迎です。
           </p>
           <a
-            href="https://x.com/naoto_develop"
+            href="https://x.com/naoto_dev_jp"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
