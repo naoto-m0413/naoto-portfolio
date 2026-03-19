@@ -92,7 +92,7 @@ export default function CommunityPage() {
         <section className="space-y-5">
           <div className="flex items-baseline gap-3">
             <h2 className="text-xl font-semibold">次回開催予定</h2>
-            <span className="text-xs text-[#555]">※ 急遽中止になる場合があります</span>
+            <span className="text-sm text-[#a3a3a3]">※ 急遽中止になる場合があります</span>
           </div>
           <div className="space-y-3">
             <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
@@ -110,7 +110,7 @@ export default function CommunityPage() {
               <span className="text-sm text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
             </div>
           </div>
-          <p className="text-xs text-[#555]">※ カメラ・音声・画面共有はすべて任意です。チャットのみの参加も歓迎です。</p>
+          <p className="text-sm text-[#a3a3a3]">※ カメラ・音声・画面共有はすべて任意です。チャットのみの参加も歓迎です。</p>
         </section>
 
         {/* Details */}
@@ -132,7 +132,7 @@ export default function CommunityPage() {
           <h2 className="text-xl font-semibold">こんな方におすすめ</h2>
           <ul className="space-y-3">
             {participationStyles.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-[#a3a3a3] text-sm">
+              <li key={i} className="flex items-start gap-3 text-[#f5f5f5] text-sm">
                 <span className="mt-0.5 w-5 h-5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs flex items-center justify-center flex-shrink-0">
                   {i + 1}
                 </span>
