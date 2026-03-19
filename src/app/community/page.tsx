@@ -108,32 +108,19 @@ export default function CommunityPage() {
                 <p className="text-sm font-medium text-[#f5f5f5]">3/25（水）20:00〜21:30</p>
                 <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
               </div>
-              <span className="text-sm text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
+              <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">事前申込必須</span>
             </div>
             <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
               <div>
                 <p className="text-sm font-medium text-[#f5f5f5]">3/28（土）14:00〜15:30</p>
                 <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
               </div>
-              <span className="text-sm text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
+              <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">事前申込必須</span>
             </div>
           </div>
           <p className="text-sm text-[#a3a3a3]">※ カメラ・音声・画面共有はすべて任意です。チャットのみの参加も歓迎です。</p>
         </section>
 
-        {/* Details */}
-        <section className="grid sm:grid-cols-2 gap-4">
-          <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
-            <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">開催候補</p>
-            <p className="text-sm font-medium text-[#f5f5f5]">火・水・木 20:00〜21:30</p>
-            <p className="text-sm font-medium text-[#f5f5f5]">土・日 14:00〜15:30</p>
-          </div>
-          <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
-            <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">形式</p>
-            <p className="text-sm font-medium text-[#f5f5f5]">オンライン</p>
-            <p className="text-sm text-[#a3a3a3]">Discord</p>
-          </div>
-        </section>
 
         {/* Slots */}
         <section className="space-y-5">
@@ -142,14 +129,14 @@ export default function CommunityPage() {
             <div className="p-5 rounded-xl bg-[#171717] border border-blue-500/20 space-y-2">
               <div className="flex items-center gap-2">
                 <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2 py-0.5 rounded-full font-medium">発表枠</span>
-                <span className="text-xs text-[#555]">先着順</span>
+                <span className="text-xs text-[#555]">先着順・事前申込制</span>
               </div>
               <p className="text-sm font-medium text-[#f5f5f5]">最大5名</p>
               <p className="text-xs text-[#a3a3a3] leading-relaxed">アプリを見せてフィードバックをもらいたい方。1人あたり15〜20分程度。</p>
             </div>
             <div className="p-5 rounded-xl bg-[#171717] border border-emerald-500/20 space-y-2">
               <div className="flex items-center gap-2">
-                <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium">参加枠</span>
+                <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium">見学枠</span>
                 <span className="text-xs text-[#555]">事前申込制</span>
               </div>
               <p className="text-sm font-medium text-[#f5f5f5]">どなたでも</p>
