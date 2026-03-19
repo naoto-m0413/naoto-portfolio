@@ -17,7 +17,12 @@ const sections = [
       "本アプリは広告を表示せず、Google Analytics等の分析ツールも使用していません。",
   },
   {
-    title: "第3条（お問い合わせ）",
+    title: "第3条（SNS共有機能について）",
+    content:
+      "本アプリには今日の目標をSNSに投稿する機能があります。共有はiOS標準のシェート機能を使用しており、アプリがユーザーの入力内容を収集・送信することはありません。共有先のSNSプラットフォームの利用規約・プライバシーポリシーが適用されます。",
+  },
+  {
+    title: "第4条（お問い合わせ）",
     content:
       "プライバシーに関するご質問は、アプリ内の問い合わせ窓口よりご連絡ください。",
   },
@@ -29,7 +34,7 @@ export default function IkiisougePrivacyPage() {
       <div className="max-w-2xl mx-auto px-6 py-16">
         <h1 className="text-2xl font-bold mb-2">プライバシーポリシー</h1>
         <p className="text-[#a3a3a3] text-sm mb-1">生き急げ！</p>
-        <p className="text-[#a3a3a3] text-sm mb-10">最終更新日：2026年3月10日</p>
+        <p className="text-[#a3a3a3] text-sm mb-10">最終更新日：2026年3月19日</p>
 
         <div className="space-y-8">
           {sections.map((section) => (
