@@ -117,26 +117,37 @@ export function Hero() {
               </motion.a>
             </motion.div>
 
-            {/* Community banner — desktop only */}
-            <motion.a
-              href="/community"
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.88, duration: 0.6, ease: "easeOut" }}
-              whileHover={{ borderColor: "rgba(59,130,246,0.4)", backgroundColor: "rgba(59,130,246,0.05)" }}
-              className="flex items-center gap-3 mt-5 px-4 py-3 rounded-xl border border-[#2a2a2a] bg-[#171717]/60 transition-colors duration-200 group w-fit"
-            >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
-              <span className="text-sm text-[#a3a3a3] group-hover:text-[#f5f5f5] transition-colors duration-200">
-                <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span>、参加募集中です
-              </span>
-              <span className="text-[#555] text-xs group-hover:text-blue-400 transition-colors duration-200">→</span>
-            </motion.a>
 
           </div>
 
           {/* Right: App + Work previews — PC only */}
           <div className="hidden lg:flex flex-col gap-2.5">
+
+            {/* Community card */}
+            <motion.a
+              href="/community"
+              initial={{ opacity: 0, x: 70 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+              className="block p-5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-emerald-500/30 transition-colors duration-300 mb-1 group"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="text-emerald-400 text-xs font-medium">参加募集中</span>
+              </div>
+              <p className="text-[#f5f5f5] font-bold text-lg leading-tight mb-2">
+                アプリをよくする会
+              </p>
+              <p className="text-[#a3a3a3] text-xs leading-relaxed mb-3">
+                作ったアプリを見せて、感想や改善案を持ち寄るオンラインの会。
+                気軽に見せて、ちゃんと持ち帰れる場を目指しています。
+              </p>
+              <span className="text-xs text-[#555] group-hover:text-blue-400 transition-colors duration-200">
+                詳細・参加申し込み →
+              </span>
+            </motion.a>
+
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

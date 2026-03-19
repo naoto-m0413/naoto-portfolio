@@ -61,7 +61,8 @@ export default function CommunityPage() {
         </Link>
       </div>
 
-      <main className="max-w-3xl mx-auto px-6 py-16 space-y-16">
+      {/* pb-28 to avoid content hidden behind sticky bar */}
+      <main className="max-w-3xl mx-auto px-6 py-16 pb-28 space-y-16">
 
         {/* Hero */}
         <section className="space-y-5">
@@ -104,7 +105,7 @@ export default function CommunityPage() {
 
         {/* Participation styles */}
         <section className="space-y-5">
-          <h2 className="text-xl font-semibold">こんな参加ができます</h2>
+          <h2 className="text-xl font-semibold">参加のしかた</h2>
           <ul className="space-y-3">
             {participationStyles.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-[#a3a3a3] text-sm">
@@ -126,7 +127,7 @@ export default function CommunityPage() {
                 key={item.step}
                 className="flex gap-4 p-5 rounded-xl bg-[#171717] border border-[#2a2a2a]"
               >
-                <span className="text-2xl font-bold text-[#2a2a2a] flex-shrink-0 leading-none mt-0.5">
+                <span className="text-2xl font-bold text-blue-500 flex-shrink-0 leading-none mt-0.5">
                   {item.step}
                 </span>
                 <div className="space-y-1">
@@ -156,7 +157,7 @@ export default function CommunityPage() {
           </ul>
         </section>
 
-        {/* CTA */}
+        {/* CTA section */}
         <section className="p-8 rounded-2xl bg-[#171717] border border-[#2a2a2a] text-center space-y-4">
           <p className="text-lg font-semibold">参加してみませんか？</p>
           <p className="text-sm text-[#a3a3a3]">
@@ -174,6 +175,23 @@ export default function CommunityPage() {
         </section>
 
       </main>
+
+      {/* Sticky bottom bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#2a2a2a] bg-[#0b0b0b]/90 backdrop-blur-md">
+        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+          <p className="text-sm text-[#a3a3a3] hidden sm:block">
+            <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span> — 参加募集中
+          </p>
+          <a
+            href="https://x.com/naoto_dev_jp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+          >
+            参加申し込み
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
