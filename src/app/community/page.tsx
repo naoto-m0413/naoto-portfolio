@@ -77,14 +77,8 @@ export default function CommunityPage() {
             現在構想中です。内容は今後変わる可能性があります。
           </div>
           <p className="text-[#a3a3a3] text-lg leading-relaxed max-w-xl">
-            アプリを見せながら、率直な感想や改善案を持ち寄るオンラインの会です。
-            良かった点だけでなく、「もっとよくするには？」という視点で意見を交換し、
-            次に何をすべきかが見える状態を目指します。
-          </p>
-          <p className="text-[#f5f5f5] text-base leading-relaxed border-l-2 border-blue-500/40 pl-4">
-            気軽に見せて、気軽に話して、<br />
-            それでもしっかり次の一手を持ち帰れる。<br />
-            そんな場にしたいと思っています。
+            自分のアプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。
+            次にやることが見えたり、個人開発者が気軽に交流できたりする場を目指しています。
           </p>
         </section>
 
