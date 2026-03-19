@@ -308,12 +308,12 @@ export function Hero() {
         transition={{ delay: 1.4, duration: 0.8 }}
         className="hidden lg:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-1"
       >
-        <span className="text-[#333] text-xs tracking-widest uppercase">scroll</span>
+        <span className="text-[#666] text-xs tracking-widest uppercase">scroll</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
         >
-          <ChevronDown size={16} className="text-[#333]" />
+          <ChevronDown size={16} className="text-[#666]" />
         </motion.div>
       </motion.div>
 
