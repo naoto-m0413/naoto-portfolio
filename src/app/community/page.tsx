@@ -99,14 +99,14 @@ export default function CommunityPage() {
             <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
               <div>
                 <p className="text-sm font-medium text-[#f5f5f5]">3/25（水）20:00〜21:30</p>
-                <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord または Google Meet）</p>
+                <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
               </div>
               <span className="text-sm text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
             </div>
             <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
               <div>
                 <p className="text-sm font-medium text-[#f5f5f5]">3/28（土）14:00〜15:30</p>
-                <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord または Google Meet）</p>
+                <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
               </div>
               <span className="text-sm text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
             </div>
@@ -119,7 +119,7 @@ export default function CommunityPage() {
           <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
             <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">形式</p>
             <p className="text-sm font-medium text-[#f5f5f5]">オンライン</p>
-            <p className="text-sm text-[#a3a3a3]">Discord または Google Meet</p>
+            <p className="text-sm text-[#a3a3a3]">Discord</p>
           </div>
           <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
             <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">開催候補</p>
