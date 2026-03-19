@@ -104,10 +104,10 @@ export function Contact() {
             className="space-y-5"
           >
             <p className="text-[#f5f5f5] text-xl leading-relaxed font-light">
-              気軽にご連絡ください。
+              お気軽にご連絡ください。
             </p>
             <p className="text-[#a3a3a3] text-sm leading-relaxed">
-              アプリや個人制作のこと、お仕事のご依頼など、なんでもどうぞ。お返事します。
+              アプリや個人制作のこと、お仕事のご相談など、ぜひお寄せください。内容を確認のうえ、返信いたします。
             </p>
           </motion.div>
 
