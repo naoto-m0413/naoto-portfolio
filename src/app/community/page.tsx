@@ -84,6 +84,31 @@ export default function CommunityPage() {
           </p>
         </section>
 
+        {/* Schedule */}
+        <section className="space-y-5">
+          <div className="flex items-center gap-3">
+            <h2 className="text-xl font-semibold">次回開催</h2>
+            <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">日程仮</span>
+          </div>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
+              <div>
+                <p className="text-sm font-medium text-[#f5f5f5]">4月上旬（火・水・木）20:00〜21:30</p>
+                <p className="text-xs text-[#555] mt-0.5">オンライン（Discord または Google Meet）</p>
+              </div>
+              <span className="text-xs text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
+            </div>
+            <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
+              <div>
+                <p className="text-sm font-medium text-[#f5f5f5]">4月上旬（土・日）14:00〜15:30</p>
+                <p className="text-xs text-[#555] mt-0.5">オンライン（Discord または Google Meet）</p>
+              </div>
+              <span className="text-xs text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
+            </div>
+          </div>
+          <p className="text-xs text-[#555]">※ 正式な日程は申し込み後にご連絡します。</p>
+        </section>
+
         {/* Details */}
         <section className="grid sm:grid-cols-3 gap-4">
           <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
