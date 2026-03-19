@@ -122,7 +122,7 @@ export default function CommunityPage() {
           <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
             <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">開催候補</p>
             <p className="text-sm font-medium text-[#f5f5f5]">火・水・木 20:00〜21:30</p>
-            <p className="text-sm text-[#a3a3a3]">土・日 14:00〜15:30</p>
+            <p className="text-sm font-medium text-[#f5f5f5]">土・日 14:00〜15:30</p>
           </div>
           <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
             <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">1人あたり</p>
