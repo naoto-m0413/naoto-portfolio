@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smartphone, Globe } from "lucide-react";
+import { Smartphone, Globe, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { apps } from "@/data/apps";
 import { works } from "@/data/works";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[72vh] md:min-h-[88vh] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[72vh] md:min-h-[82vh] flex flex-col justify-center overflow-hidden">
 
       {/* Background — animated drifting orbs */}
       <div className="absolute inset-0 pointer-events-none">
@@ -136,7 +136,7 @@ export function Hero() {
           </div>
 
           {/* Right: App + Work previews — PC only */}
-          <div className="hidden lg:flex flex-col gap-2.5">
+          <div className="hidden lg:flex flex-col gap-4">
 
             {/* Community card */}
             <motion.a
@@ -145,7 +145,7 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-              className="block p-5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-emerald-500/30 transition-colors duration-300 mb-1 group"
+              className="block p-5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-emerald-500/30 transition-colors duration-300 group"
             >
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">構想中</span>
@@ -166,7 +166,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.65, duration: 0.5 }}
-              className="text-[#555] text-xs uppercase tracking-widest mb-2"
+              className="text-[#666] text-xs font-semibold uppercase tracking-widest border-b border-[#1e1e1e] pb-2"
             >
               iOSアプリ
             </motion.p>
@@ -237,7 +237,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.78 + apps.length * 0.18 + 0.1, duration: 0.5 }}
-              className="text-[#555] text-xs uppercase tracking-widest mt-1 mb-0.5"
+              className="text-[#666] text-xs font-semibold uppercase tracking-widest border-b border-[#1e1e1e] pb-2 mt-2"
             >
               ブラウザゲーム
             </motion.p>
@@ -301,6 +301,21 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Scroll hint — desktop only */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 0.8 }}
+        className="hidden lg:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-1"
+      >
+        <span className="text-[#333] text-xs tracking-widest uppercase">scroll</span>
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
+        >
+          <ChevronDown size={16} className="text-[#333]" />
+        </motion.div>
+      </motion.div>
 
     </section>
   );
