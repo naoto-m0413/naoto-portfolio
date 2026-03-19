@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 };
 
 const participationStyles = [
-  "自分のアプリや制作中のものを見せて、意見や反応をもらいたい",
-  "これから作る前に、他の人のアプリを見てインプットしたい",
-  "今回は発表せず、聞くだけで参加したい",
+  "自分のアプリや制作中のものを見せて、意見や反応をもらいたい方",
+  "これからアプリを作る前に、他の人のアプリに触れてインプットしたい方",
+  "今回は発表せず、まずは聞くだけで参加してみたい方",
 ];
 
 const values = [
@@ -90,7 +90,10 @@ export default function CommunityPage() {
 
         {/* Schedule */}
         <section className="space-y-5">
-          <h2 className="text-xl font-semibold">次回開催</h2>
+          <div className="flex items-baseline gap-3">
+            <h2 className="text-xl font-semibold">次回開催予定</h2>
+            <span className="text-xs text-[#555]">※ 急遽中止になる場合があります</span>
+          </div>
           <div className="space-y-3">
             <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
               <div>
@@ -130,7 +133,7 @@ export default function CommunityPage() {
 
         {/* Participation styles */}
         <section className="space-y-5">
-          <h2 className="text-xl font-semibold">こんな人に来てほしい</h2>
+          <h2 className="text-xl font-semibold">こんな方におすすめ</h2>
           <ul className="space-y-3">
             {participationStyles.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-[#a3a3a3] text-sm">
