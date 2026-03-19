@@ -161,17 +161,12 @@ export default function CommunityPage() {
         <section className="p-8 rounded-2xl bg-[#171717] border border-[#2a2a2a] text-center space-y-4">
           <p className="text-lg font-semibold">参加してみませんか？</p>
           <p className="text-sm text-[#a3a3a3]">
-            発表する方は事前フォームの提出をお願いします。
-            <br />聞くだけの参加も大歓迎です。
+            発表・聞くだけ、どちらの場合も事前申し込みをお願いします。
+            <br />申し込み後、記載の連絡先にご連絡します。
           </p>
-          <a
-            href="https://x.com/naoto_dev_jp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
-          >
-            X (Twitter) で声をかける
-          </a>
+          <span className="inline-flex items-center gap-2 px-6 py-3 bg-[#2a2a2a] text-[#555] rounded-lg text-sm font-medium cursor-not-allowed">
+            申し込みフォーム（準備中）
+          </span>
         </section>
 
       </main>
@@ -182,14 +177,9 @@ export default function CommunityPage() {
           <p className="text-sm text-[#a3a3a3] hidden sm:block">
             <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span> — 参加募集中
           </p>
-          <a
-            href="https://x.com/naoto_dev_jp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
-          >
-            参加申し込み
-          </a>
+          <span className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#2a2a2a] text-[#555] rounded-lg text-sm font-medium cursor-not-allowed">
+            申し込みフォーム（準備中）
+          </span>
         </div>
       </div>
     </div>
