@@ -23,7 +23,7 @@ const contacts = [
   {
     label: "note",
     handle: "naoto_dev_jp",
-    description: "制作の記録を書いていく予定です。",
+    description: "作ったことや学んだことを発信しています。",
     href: "https://note.com/naoto_dev_jp",
     color: "hover:border-emerald-500/30 hover:bg-emerald-500/5",
     icon: (
