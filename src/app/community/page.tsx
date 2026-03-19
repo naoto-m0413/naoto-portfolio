@@ -105,7 +105,7 @@ export default function CommunityPage() {
 
         {/* Participation styles */}
         <section className="space-y-5">
-          <h2 className="text-xl font-semibold">参加のしかた</h2>
+          <h2 className="text-xl font-semibold">こんな人に来てほしい</h2>
           <ul className="space-y-3">
             {participationStyles.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-[#a3a3a3] text-sm">
