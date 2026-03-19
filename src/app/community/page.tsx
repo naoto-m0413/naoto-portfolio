@@ -47,6 +47,21 @@ const flow = [
   },
 ];
 
+const notes = [
+  "参加には事前申込をお願いします",
+  "発表枠は最大5名の先着制です",
+  "当日の進行によって、時間が多少前後することがあります",
+  "開催はDiscordで行い、参加方法は申込後にご案内します",
+];
+
+const prohibited = [
+  "他の参加者の作品やアイデアを無断で使用・転載すること",
+  "相手が不快になる発言や誹謗中傷",
+  "営業、勧誘、過度な宣伝",
+  "許可のない録音・録画・内容の公開",
+  "そのほか、運営が不適切と判断する行為",
+];
+
 export default function CommunityPage() {
   return (
     <div className="min-h-screen bg-[#0b0b0b] text-[#f5f5f5]">
@@ -120,6 +135,29 @@ export default function CommunityPage() {
           </div>
         </section>
 
+        {/* Slots */}
+        <section className="space-y-5">
+          <h2 className="text-xl font-semibold">参加枠について</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="p-5 rounded-xl bg-[#171717] border border-blue-500/20 space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2 py-0.5 rounded-full font-medium">発表枠</span>
+                <span className="text-xs text-[#555]">先着順</span>
+              </div>
+              <p className="text-sm font-medium text-[#f5f5f5]">最大5名</p>
+              <p className="text-xs text-[#a3a3a3] leading-relaxed">アプリを見せてフィードバックをもらいたい方。1人あたり15〜20分程度。</p>
+            </div>
+            <div className="p-5 rounded-xl bg-[#171717] border border-emerald-500/20 space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium">参加枠</span>
+                <span className="text-xs text-[#555]">事前申込制</span>
+              </div>
+              <p className="text-sm font-medium text-[#f5f5f5]">どなたでも</p>
+              <p className="text-xs text-[#a3a3a3] leading-relaxed">発表せずに聞くだけでもOKです。インプット目的の参加も歓迎します。</p>
+            </div>
+          </div>
+        </section>
+
         {/* Participation styles */}
         <section className="space-y-5">
           <h2 className="text-xl font-semibold">こんな方におすすめ</h2>
@@ -174,11 +212,38 @@ export default function CommunityPage() {
           </ul>
         </section>
 
+        {/* Notes & Prohibited */}
+        <section className="space-y-6">
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold">注意事項</h2>
+            <ul className="space-y-2">
+              {notes.map((note, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-[#a3a3a3]">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#555] flex-shrink-0" />
+                  {note}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold">禁止事項</h2>
+            <ul className="space-y-2">
+              {prohibited.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-[#a3a3a3]">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#555] flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* CTA section */}
         <section className="p-8 rounded-2xl bg-[#171717] border border-[#2a2a2a] text-center space-y-4">
           <p className="text-lg font-semibold">参加してみませんか？</p>
           <p className="text-sm text-[#a3a3a3]">
-            発表・聞くだけ、どちらの場合も事前申し込みをお願いします。申し込み後、記載の連絡先にご連絡します。
+            発表・聞くだけ、どちらも事前申込が必要です。<br />
+            申込後、登録したメールアドレス宛に参加方法（Discord）をご案内します。
           </p>
           <a
             href="https://forms.gle/HMuE6yzDyWufTKgE6"
