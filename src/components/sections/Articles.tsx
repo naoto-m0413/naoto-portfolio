@@ -8,14 +8,21 @@ import { articles } from "@/data/articles";
 export function Articles() {
   return (
     <section id="articles" className="py-20 bg-[#0b0b0b]">
-      <div className="max-w-7xl mx-auto px-6">
-        <SectionHeader
-          en="Articles"
-          ja="記事・発信"
-          description="noteで、作ったことや学んだことを発信しています。"
-        />
+      <div className="max-w-7xl mx-auto">
+        <div className="px-6">
+          <SectionHeader
+            en="Articles"
+            ja="記事・発信"
+            description="noteで、作ったことや学んだことを発信しています。"
+          />
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div
+          className="flex lg:grid lg:grid-cols-3 gap-4 overflow-x-auto lg:overflow-x-visible
+            px-6 pb-4 lg:pb-0 snap-x snap-mandatory lg:snap-none
+            [scrollbar-width:thin] [scrollbar-color:#2a2a2a_transparent]
+            [-webkit-overflow-scrolling:touch]"
+        >
           {articles.map((article, i) => (
             <motion.a
               key={article.id}
@@ -26,7 +33,7 @@ export function Articles() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group flex flex-col p-6 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-900/10 transition-all duration-300"
+              className="group flex flex-col flex-shrink-0 lg:flex-shrink w-[82vw] sm:w-[320px] lg:w-auto snap-start p-6 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-900/10 transition-all duration-300"
             >
               {/* Top: category + arrow */}
               <div className="flex items-center justify-between mb-4">
@@ -63,7 +70,7 @@ export function Articles() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-8 text-center"
+          className="mt-8 text-center px-6"
         >
           <a
             href="https://note.com/naoto_dev_jp"
