@@ -132,7 +132,7 @@ export default function CommunityPage() {
           <h2 className="text-xl font-semibold">こんな方におすすめ</h2>
           <ul className="space-y-3">
             {participationStyles.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-[#f5f5f5] text-sm">
+              <li key={i} className="flex items-start gap-3 text-[#f5f5f5] text-base">
                 <span className="mt-0.5 w-5 h-5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs flex items-center justify-center flex-shrink-0">
                   {i + 1}
                 </span>
