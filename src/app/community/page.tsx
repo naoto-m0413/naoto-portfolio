@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "アプリをよくする会 | Naoto",
+  title: "アプリをよくする会（iOS） | Naoto",
   description:
     "アプリを見せながら、感想や改善案を持ち寄るオンラインの会です。気軽に見せて、気軽に話して、でもちゃんと持ち帰れる場を目指しています。",
 };
@@ -72,7 +72,7 @@ export default function CommunityPage() {
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            アプリをよくする会
+            アプリをよくする会（iOS）
           </h1>
           <div className="p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-sm text-amber-300/80 leading-relaxed">
             現在この会はまだ構想段階です。日程・形式などは検討中で、今後確定次第このページを更新します。
@@ -201,7 +201,7 @@ export default function CommunityPage() {
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#2a2a2a] bg-[#0b0b0b]/90 backdrop-blur-md">
         <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <p className="text-sm text-[#a3a3a3] hidden sm:block">
-            <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span> — 参加募集中
+            <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span> — 参加募集中
           </p>
           <span className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#2a2a2a] text-[#555] rounded-lg text-sm font-medium cursor-not-allowed">
             申し込みフォーム（準備中）

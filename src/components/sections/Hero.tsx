@@ -128,7 +128,7 @@ export function Hero() {
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
               <span className="text-sm text-[#a3a3a3] group-hover:text-[#f5f5f5] transition-colors duration-200">
-                <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span>、構想中です
+                <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span>、構想中です
               </span>
               <span className="text-[#555] text-xs group-hover:text-blue-400 transition-colors duration-200">→</span>
             </motion.a>
@@ -151,7 +151,7 @@ export function Hero() {
                 <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">構想中</span>
               </div>
               <p className="text-[#f5f5f5] font-bold text-lg leading-tight mb-2">
-                アプリをよくする会
+                アプリをよくする会（iOS）
               </p>
               <p className="text-[#a3a3a3] text-xs leading-relaxed mb-3">
                 作ったアプリを見せて、感想や改善案を持ち寄るオンラインの会。
