@@ -128,7 +128,7 @@ export function Hero() {
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
               <span className="text-sm text-[#a3a3a3] group-hover:text-[#f5f5f5] transition-colors duration-200">
-                <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span>、参加募集中です
+                <span className="text-[#f5f5f5] font-medium">アプリをよくする会</span>、構想中です
               </span>
               <span className="text-[#555] text-xs group-hover:text-blue-400 transition-colors duration-200">→</span>
             </motion.a>
@@ -148,8 +148,7 @@ export function Hero() {
               className="block p-5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-emerald-500/30 transition-colors duration-300 mb-1 group"
             >
               <div className="flex items-center gap-2 mb-3">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="text-emerald-400 text-xs font-medium">参加募集中</span>
+                <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">構想中</span>
               </div>
               <p className="text-[#f5f5f5] font-bold text-lg leading-tight mb-2">
                 アプリをよくする会

@@ -66,13 +66,18 @@ export default function CommunityPage() {
 
         {/* Hero */}
         <section className="space-y-5">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-emerald-400 text-sm font-medium">参加募集中</span>
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full font-medium">
+              構想中
+            </span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
             アプリをよくする会
           </h1>
+          <div className="p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-sm text-amber-300/80 leading-relaxed">
+            現在この会はまだ構想段階です。日程・形式などは検討中で、今後確定次第このページを更新します。
+            興味があればぜひ申し込みフォームから登録しておいてください。
+          </div>
           <p className="text-[#a3a3a3] text-lg leading-relaxed max-w-xl">
             アプリを見せながら、感想や改善案を持ち寄るオンラインの会です。
             良かった点だけでなく、もっとよくするための視点も交換しながら、
