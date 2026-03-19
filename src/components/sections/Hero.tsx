@@ -157,7 +157,7 @@ export function Hero() {
                 作ったアプリを見せて、感想や改善案を持ち寄るオンラインの会。
                 気軽に見せて、ちゃんと持ち帰れる場を目指しています。
               </p>
-              <span className="text-xs text-[#555] group-hover:text-blue-400 transition-colors duration-200">
+              <span className="text-xs text-blue-400">
                 詳細・参加申し込み →
               </span>
             </motion.a>
