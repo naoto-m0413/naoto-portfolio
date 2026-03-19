@@ -189,9 +189,14 @@ export default function CommunityPage() {
             発表・聞くだけ、どちらの場合も事前申し込みをお願いします。
             <br />申し込み後、記載の連絡先にご連絡します。
           </p>
-          <span className="inline-flex items-center gap-2 px-6 py-3 bg-[#2a2a2a] text-[#555] rounded-lg text-sm font-medium cursor-not-allowed">
-            申し込みフォーム（準備中）
-          </span>
+          <a
+            href="https://forms.gle/9tKN4TEdDfHcCNtR9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+          >
+            参加申し込みフォーム
+          </a>
         </section>
 
       </main>
@@ -202,9 +207,14 @@ export default function CommunityPage() {
           <p className="text-sm text-[#a3a3a3] hidden sm:block">
             <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span> — 参加募集中
           </p>
-          <span className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#2a2a2a] text-[#555] rounded-lg text-sm font-medium cursor-not-allowed">
-            申し込みフォーム（準備中）
-          </span>
+          <a
+            href="https://forms.gle/9tKN4TEdDfHcCNtR9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+          >
+            参加申し込みフォーム
+          </a>
         </div>
       </div>
     </div>
