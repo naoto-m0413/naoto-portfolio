@@ -35,7 +35,7 @@ function WorkCard({ work }: { work: (typeof works)[number] }) {
       }`}
     >
       {/* Tags */}
-      <div className="flex gap-2 px-4 pt-4">
+      <div className="flex items-center gap-2 px-4 pt-4">
         <span className={`px-2.5 py-1 text-xs rounded-full border font-medium ${categoryColors[work.category] ?? "text-[#a3a3a3] bg-[#1a1a1a] border-[#2a2a2a]"}`}>
           {work.category}
         </span>
@@ -45,6 +45,12 @@ function WorkCard({ work }: { work: (typeof works)[number] }) {
         {work.badge && (
           <span className="px-2.5 py-1 text-xs rounded-full border font-medium text-[#a3a3a3] bg-[#1a1a1a] border-[#2a2a2a]">
             {work.badge}
+          </span>
+        )}
+        {isPublished && work.links.site && (
+          <span className="ml-auto flex items-center gap-1 text-xs text-blue-400">
+            <ExternalLink size={12} />
+            開く
           </span>
         )}
       </div>
