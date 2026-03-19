@@ -74,8 +74,7 @@ export default function CommunityPage() {
             アプリをよくする会（iOS）
           </h1>
           <div className="p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-sm text-amber-300/80 leading-relaxed">
-            現在この会はまだ構想段階です。日程・形式などは検討中で、今後確定次第このページを更新します。
-            興味があればぜひ申し込みフォームから登録しておいてください。
+            現在構想中です。内容は今後変わる可能性があります。
           </div>
           <p className="text-[#a3a3a3] text-lg leading-relaxed max-w-xl">
             アプリを見せながら、率直な感想や改善案を持ち寄るオンラインの会です。
