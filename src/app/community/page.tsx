@@ -137,7 +137,7 @@ export default function CommunityPage() {
 
         {/* Flow */}
         <section className="space-y-5">
-          <h2 className="text-xl font-semibold">会の進め方</h2>
+          <h2 className="text-xl font-semibold">進行の流れ</h2>
           <div className="space-y-3">
             {flow.map((item) => (
               <div
