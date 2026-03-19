@@ -111,10 +111,11 @@ export default function CommunityPage() {
               <span className="text-sm text-[#a3a3a3] flex-shrink-0 ml-4">残り5枠</span>
             </div>
           </div>
+          <p className="text-xs text-[#555]">※ カメラ・音声・画面共有はすべて任意です。チャットのみの参加も歓迎です。</p>
         </section>
 
         {/* Details */}
-        <section className="grid sm:grid-cols-3 gap-4">
+        <section className="grid sm:grid-cols-2 gap-4">
           <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
             <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">形式</p>
             <p className="text-sm font-medium text-[#f5f5f5]">オンライン</p>
@@ -124,11 +125,6 @@ export default function CommunityPage() {
             <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">開催候補</p>
             <p className="text-sm font-medium text-[#f5f5f5]">火・水・木 20:00〜21:30</p>
             <p className="text-sm font-medium text-[#f5f5f5]">土・日 14:00〜15:30</p>
-          </div>
-          <div className="p-5 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-1.5">
-            <p className="text-xs text-[#a3a3a3] uppercase tracking-widest">1人あたり</p>
-            <p className="text-sm font-medium text-[#f5f5f5]">15〜20分</p>
-            <p className="text-sm text-[#a3a3a3]">カメラ・音声は自由</p>
           </div>
         </section>
 
