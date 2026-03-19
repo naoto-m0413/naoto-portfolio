@@ -107,10 +107,7 @@ export function Contact() {
               気軽にご連絡ください。
             </p>
             <p className="text-[#a3a3a3] text-sm leading-relaxed">
-              アプリのことや個人制作についてなど、気軽にご連絡いただけると嬉しいです。
-            </p>
-            <p className="text-[#a3a3a3] text-sm leading-relaxed">
-              いただいたメッセージにはできる限りお返事します。
+              アプリや個人制作のこと、お仕事のご依頼など、なんでもどうぞ。お返事します。
             </p>
           </motion.div>
 
