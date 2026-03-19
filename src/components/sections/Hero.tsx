@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smartphone, Globe, ChevronDown } from "lucide-react";
+import { Smartphone, Globe, ChevronDown, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { apps } from "@/data/apps";
 import { works } from "@/data/works";
@@ -276,9 +276,12 @@ export function Hero() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between gap-2">
                         <p className="text-[#f5f5f5] font-semibold text-sm truncate">{work.title}</p>
-                        <span className="flex-shrink-0 text-xs px-2 py-0.5 rounded-full border text-emerald-400 bg-emerald-500/10 border-emerald-500/20">
-                          {work.status}
-                        </span>
+                        <div className="flex items-center gap-1.5 flex-shrink-0">
+                          <span className="text-xs px-2 py-0.5 rounded-full border text-emerald-400 bg-emerald-500/10 border-emerald-500/20">
+                            {work.status}
+                          </span>
+                          <ExternalLink size={12} className="text-blue-400" />
+                        </div>
                       </div>
                       <p className="text-[#a3a3a3] text-xs mt-0.5 truncate">{work.tagline ?? work.category}</p>
                     </div>
