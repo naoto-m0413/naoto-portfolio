@@ -76,17 +76,16 @@ export default function CommunityPage() {
           <div className="p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-sm text-amber-300/80 leading-relaxed">
             現在構想中です。内容は今後変わる可能性があります。
           </div>
-          <p className="text-[#a3a3a3] text-lg leading-relaxed max-w-xl">
-            自分のアプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。
-            次にやることが見えたり、個人開発者が気軽に交流できたりする場を目指しています。
+          <p className="text-[#a3a3a3] text-base sm:text-lg leading-relaxed">
+            自分のアプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。次にやることが見えたり、個人開発者が気軽に交流できたりする場を目指しています。
           </p>
         </section>
 
         {/* Schedule */}
         <section className="space-y-5">
-          <div className="flex items-baseline gap-3">
+          <div className="space-y-1">
             <h2 className="text-xl font-semibold">次回開催予定</h2>
-            <span className="text-sm text-[#a3a3a3]">※ 急遽中止になる場合があります</span>
+            <p className="text-sm text-[#a3a3a3]">※ 急遽中止になる場合があります</p>
           </div>
           <div className="space-y-3">
             <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
@@ -179,8 +178,7 @@ export default function CommunityPage() {
         <section className="p-8 rounded-2xl bg-[#171717] border border-[#2a2a2a] text-center space-y-4">
           <p className="text-lg font-semibold">参加してみませんか？</p>
           <p className="text-sm text-[#a3a3a3]">
-            発表・聞くだけ、どちらの場合も事前申し込みをお願いします。
-            <br />申し込み後、記載の連絡先にご連絡します。
+            発表・聞くだけ、どちらの場合も事前申し込みをお願いします。申し込み後、記載の連絡先にご連絡します。
           </p>
           <a
             href="https://forms.gle/rTJMvwSTL7wV1RZM7"
