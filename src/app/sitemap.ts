@@ -1,24 +1,11 @@
 import { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site";
-
-const routes = [
-  "",
-  "/community",
-  "/teijitaiping/terms",
-  "/teijitaiping/privacy",
-  "/atodeyaru/support",
-  "/atodeyaru/privacy",
-  "/atodeyaru/terms",
-  "/ikiisoge/support",
-  "/privacy/atodeyaru",
-  "/privacy/ikiisoge",
-  "/terms/ikiisoge",
-] as const;
+import { sitemapRoutes } from "@/lib/sitemap-routes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  return routes.map((route) => ({
+  return sitemapRoutes.map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified,
     changeFrequency: route === "" ? "weekly" : "monthly",
