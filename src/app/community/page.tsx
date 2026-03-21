@@ -90,7 +90,7 @@ export default function CommunityPage() {
             アプリをよくする会（iOS）
           </h1>
           <p className="text-[#a3a3a3] text-base sm:text-lg leading-relaxed">
-            自分のアプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。次にやることが見えたり、個人開発者が気軽に交流できたりする場を目指しています。
+            アプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。新しい気づきを得ながら、個人開発者同士で交流できる場を目指しています。
           </p>
         </section>
 
@@ -217,20 +217,43 @@ export default function CommunityPage() {
         </section>
 
         {/* CTA section */}
-        <section className="p-8 rounded-2xl bg-[#171717] border border-[#2a2a2a] text-center space-y-4">
-          <p className="text-lg font-semibold">参加してみませんか？</p>
-          <p className="text-sm text-[#a3a3a3]">
-            発表・聞くだけ、どちらも事前申込が必要です。<br />
-            申込後、登録したメールアドレス宛に参加方法（Discord）をご案内します。
-          </p>
-          <a
-            href="https://forms.gle/vYoghyRrr6SUhArY8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
-          >
-            参加申し込みフォーム
-          </a>
+        <section className="p-8 rounded-2xl bg-[#171717] border border-[#2a2a2a] space-y-6">
+          <div className="text-center space-y-2">
+            <p className="text-lg font-semibold">参加してみませんか？</p>
+            <p className="text-sm text-[#a3a3a3]">
+              どちらも事前申込が必要です。申込後、登録したメールアドレス宛に参加方法（Discord）をご案内します。
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="p-5 rounded-xl bg-[#0b0b0b] border border-blue-500/20 space-y-3">
+              <div>
+                <p className="text-sm font-semibold text-[#f5f5f5]">発表枠</p>
+                <p className="text-xs text-[#a3a3a3] mt-1">アプリを見せてフィードバックをもらう枠。最大4名・先着順。</p>
+              </div>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+              >
+                発表枠に申し込む
+              </a>
+            </div>
+            <div className="p-5 rounded-xl bg-[#0b0b0b] border border-emerald-500/20 space-y-3">
+              <div>
+                <p className="text-sm font-semibold text-[#f5f5f5]">見学枠</p>
+                <p className="text-xs text-[#a3a3a3] mt-1">他の方のアプリを使ってフィードバックを出す枠。最大4名・先着順。</p>
+              </div>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors duration-200"
+              >
+                見学枠に申し込む
+              </a>
+            </div>
+          </div>
         </section>
 
         {/* Contact link */}
@@ -248,18 +271,28 @@ export default function CommunityPage() {
 
       {/* Sticky bottom bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#2a2a2a] bg-[#0b0b0b]/90 backdrop-blur-md">
-        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
-          <p className="text-sm text-[#a3a3a3] hidden sm:block">
+        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between gap-3">
+          <p className="text-sm text-[#a3a3a3] hidden sm:block shrink-0">
             <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span> — 参加募集中
           </p>
-          <a
-            href="https://forms.gle/vYoghyRrr6SUhArY8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
-          >
-            参加申し込みフォーム
-          </a>
+          <div className="flex gap-2 w-full sm:w-auto">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+            >
+              発表枠
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors duration-200"
+            >
+              見学枠
+            </a>
+          </div>
         </div>
       </div>
     </div>

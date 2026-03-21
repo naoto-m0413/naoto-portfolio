@@ -154,8 +154,7 @@ export function Hero() {
                 アプリをよくする会（iOS）
               </p>
               <p className="text-[#a3a3a3] text-xs leading-relaxed mb-3">
-                作ったアプリを見せて、感想や改善案を持ち寄るオンラインの会。
-                気軽に見せて、ちゃんと持ち帰れる場を目指しています。
+                アプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。新しい気づきを得ながら、個人開発者同士で交流できる場を目指しています。
               </p>
               <span className="text-xs text-blue-400">
                 詳細・参加申し込み →
