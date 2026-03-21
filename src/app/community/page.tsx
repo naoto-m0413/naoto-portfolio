@@ -125,15 +125,15 @@ export default function CommunityPage() {
                 <span className="text-xs text-[#555]">先着順・事前申込制</span>
               </div>
               <p className="text-sm font-medium text-[#f5f5f5]">最大4名</p>
-              <p className="text-xs text-[#a3a3a3] leading-relaxed">アプリを見せてフィードバックをもらう枠です。1人あたり20分。可能な範囲で他の発表にもご参加ください。</p>
+              <p className="text-xs text-[#a3a3a3] leading-relaxed">アプリを見せてフィードバックをもらう枠です。1人あたり約20分。可能な範囲で他の発表にもご参加ください。</p>
             </div>
             <div className="p-5 rounded-xl bg-[#171717] border border-emerald-500/20 space-y-2">
               <div className="flex items-center gap-2">
                 <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium">見学枠</span>
-                <span className="text-xs text-[#555]">事前申込制</span>
+                <span className="text-xs text-[#555]">先着順・事前申込制</span>
               </div>
               <p className="text-sm font-medium text-[#f5f5f5]">最大4名</p>
-              <p className="text-xs text-[#a3a3a3] leading-relaxed">他の方のアプリを見てフィードバックを出す枠です。発表はできません。</p>
+              <p className="text-xs text-[#a3a3a3] leading-relaxed">他の方のアプリを使ってフィードバックを出す枠です。</p>
             </div>
           </div>
         </section>
