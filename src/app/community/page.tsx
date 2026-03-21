@@ -82,7 +82,7 @@ export default function CommunityPage() {
         {/* Hero */}
         <section className="space-y-5">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full font-medium">
+            <span className="text-xs text-amber-300 bg-amber-900/30 border border-amber-500/30 px-3 py-1 rounded-full font-medium">
               募集中
             </span>
           </div>
@@ -107,7 +107,7 @@ export default function CommunityPage() {
                   <p className="text-sm font-medium text-[#f5f5f5]">3/25（水）20:00〜21:30</p>
                   <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
                 </div>
-                <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">募集中</span>
+                <span className="text-xs text-amber-300 bg-amber-900/30 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">募集中</span>
               </div>
               <div className="border-t border-[#2a2a2a] pt-3 flex flex-col sm:flex-row gap-2">
                 <a
