@@ -101,12 +101,32 @@ export default function CommunityPage() {
             <p className="text-sm text-[#a3a3a3]">※ 急遽中止になる場合があります</p>
           </div>
           <div className="space-y-3">
-            <div className="flex items-center justify-between p-4 rounded-xl bg-[#171717] border border-[#2a2a2a]">
-              <div>
-                <p className="text-sm font-medium text-[#f5f5f5]">3/25（水）20:00〜21:30</p>
-                <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
+            <div className="p-4 rounded-xl bg-[#171717] border border-[#2a2a2a] space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-[#f5f5f5]">3/25（水）20:00〜21:30</p>
+                  <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
+                </div>
+                <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">募集中</span>
               </div>
-              <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">事前申込必須</span>
+              <div className="border-t border-[#2a2a2a] pt-3 flex flex-col sm:flex-row gap-2">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+                >
+                  発表枠に申し込む
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors duration-200"
+                >
+                  見学枠に申し込む
+                </a>
+              </div>
             </div>
           </div>
           <p className="text-sm text-[#a3a3a3]">※ カメラ・音声・画面共有はすべて任意です。チャットのみの参加も歓迎です。</p>
@@ -271,10 +291,11 @@ export default function CommunityPage() {
 
       {/* Sticky bottom bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#2a2a2a] bg-[#0b0b0b]/90 backdrop-blur-md">
-        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between gap-3">
-          <p className="text-sm text-[#a3a3a3] hidden sm:block shrink-0">
-            <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span> — 参加募集中
-          </p>
+        <div className="max-w-3xl mx-auto px-6 py-3 flex items-center justify-between gap-3">
+          <div className="hidden sm:block shrink-0">
+            <p className="text-sm font-medium text-[#f5f5f5]">参加申込受付中</p>
+            <p className="text-xs text-[#a3a3a3]">先着順・事前申込制</p>
+          </div>
           <div className="flex gap-2 w-full sm:w-auto">
             <a
               href="#"
@@ -282,7 +303,7 @@ export default function CommunityPage() {
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
             >
-              発表枠
+              発表枠に申し込む
             </a>
             <a
               href="#"
@@ -290,7 +311,7 @@ export default function CommunityPage() {
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors duration-200"
             >
-              見学枠
+              見学枠に申し込む
             </a>
           </div>
         </div>
