@@ -24,20 +24,20 @@ const flow = [
     step: "01",
     title: "オープニング",
     duration: "5分",
-    description: "趣旨説明とルール説明を最初に行います。",
+    description: "趣旨・ルール説明、発表順をルーレットで決定します。",
   },
   {
     step: "02",
     title: "アプリレビュー",
     duration: "メイン",
     description:
-      "4〜5人を目安に、1アプリあたり15分前後で進めます。紹介（1分）→ 体験（5〜7分）→ 制作者の意図共有（2〜3分）→ フィードバック（5〜8分）",
+      "最大4人、1アプリあたり20分で進めます。紹介（2分）→ 体験（7分）→ 制作者の意図共有（3分）→ フィードバック（8分）",
   },
   {
     step: "03",
     title: "クロージング",
     duration: "5分",
-    description: "感想を軽く共有して、次回案内で締めます。",
+    description: "次回の案内をして締めます。感想・改善要望は主催者にDMまたはメールでどうぞ。",
   },
   {
     step: "04",
@@ -49,9 +49,11 @@ const flow = [
 
 const notes = [
   "参加には事前申込をお願いします",
-  "発表枠は最大5名の先着制です",
+  "発表枠は最大4名の先着制です",
   "当日の進行によって、時間が多少前後することがあります",
   "開催はDiscordで行い、参加方法は申込後にご案内します",
+  "インストール後、無料で触れる状態でないアプリは画面共有での発表になります（トライアル後の自動更新があるものも不可）",
+  "発表者都合での不参加の場合、返金なし",
 ];
 
 const prohibited = [
@@ -59,7 +61,8 @@ const prohibited = [
   "相手が不快になる発言や誹謗中傷",
   "営業、勧誘、過度な宣伝",
   "許可のない録音・録画・内容の公開",
-  "そのほか、運営が不適切と判断する行為",
+  "雑談タイムに見学者が自分のアプリを紹介・フィードバックを求めること",
+  "App Storeレビューのお願い",
 ];
 
 export default function CommunityPage() {
@@ -81,16 +84,13 @@ export default function CommunityPage() {
         {/* Hero */}
         <section className="space-y-5">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full font-medium">
-              構想中
+            <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full font-medium">
+              募集中
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
             アプリをよくする会（iOS）
           </h1>
-          <div className="p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-sm text-amber-300/80 leading-relaxed">
-            現在構想中です。内容は今後変わる可能性があります。
-          </div>
           <p className="text-[#a3a3a3] text-base sm:text-lg leading-relaxed">
             自分のアプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。次にやることが見えたり、個人開発者が気軽に交流できたりする場を目指しています。
           </p>
@@ -124,16 +124,16 @@ export default function CommunityPage() {
                 <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2 py-0.5 rounded-full font-medium">発表枠</span>
                 <span className="text-xs text-[#555]">先着順・事前申込制</span>
               </div>
-              <p className="text-sm font-medium text-[#f5f5f5]">最大5名</p>
-              <p className="text-xs text-[#a3a3a3] leading-relaxed">アプリを見せてフィードバックをもらいたい方。1人あたり15〜20分程度。</p>
+              <p className="text-sm font-medium text-[#f5f5f5]">最大4名</p>
+              <p className="text-xs text-[#a3a3a3] leading-relaxed">アプリを見せてフィードバックをもらう枠です。1人あたり20分。可能な範囲で他の発表にもご参加ください。</p>
             </div>
             <div className="p-5 rounded-xl bg-[#171717] border border-emerald-500/20 space-y-2">
               <div className="flex items-center gap-2">
                 <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-medium">見学枠</span>
                 <span className="text-xs text-[#555]">事前申込制</span>
               </div>
-              <p className="text-sm font-medium text-[#f5f5f5]">人数制限なし</p>
-              <p className="text-xs text-[#a3a3a3] leading-relaxed">発表せずに聞くだけでもOKです。インプット目的の参加も歓迎します。</p>
+              <p className="text-sm font-medium text-[#f5f5f5]">最大4名</p>
+              <p className="text-xs text-[#a3a3a3] leading-relaxed">他の方のアプリを見てフィードバックを出す枠です。発表はできません。</p>
             </div>
           </div>
         </section>
