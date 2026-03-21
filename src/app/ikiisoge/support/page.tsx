@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "サポート | 生き急げ！",
@@ -139,12 +140,12 @@ export default function IkiisougeSupportPage() {
         </section>
 
         <div className="mt-8 pt-8 border-t border-[#2a2a2a]">
-          <a
+          <Link
             href="/"
             className="text-[#a3a3a3] text-sm hover:text-[#f5f5f5] transition-colors"
           >
             ← ポートフォリオに戻る
-          </a>
+          </Link>
         </div>
 
       </div>

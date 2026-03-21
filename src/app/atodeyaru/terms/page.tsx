@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "利用規約 | アトデヤル",
@@ -99,12 +100,12 @@ export default function AtodeyaruTermsPage() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-[#2a2a2a]">
-          <a
+          <Link
             href="/"
             className="text-[#a3a3a3] text-sm hover:text-[#f5f5f5] transition-colors"
           >
             ← ポートフォリオに戻る
-          </a>
+          </Link>
         </div>
       </div>
     </main>
