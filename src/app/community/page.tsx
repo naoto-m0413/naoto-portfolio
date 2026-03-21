@@ -111,7 +111,7 @@ export default function CommunityPage() {
               </div>
               <div className="border-t border-[#2a2a2a] pt-3 flex flex-col sm:flex-row gap-2">
                 <a
-                  href="https://forms.gle/p3hjeCspn4U4PR8A8"
+                  href="https://forms.gle/BCQM5u54ojwPhCNi8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
@@ -251,7 +251,7 @@ export default function CommunityPage() {
                 <p className="text-xs text-[#a3a3a3] mt-1">アプリを見せてフィードバックをもらう枠。最大4名・先着順。</p>
               </div>
               <a
-                href="https://forms.gle/p3hjeCspn4U4PR8A8"
+                href="https://forms.gle/BCQM5u54ojwPhCNi8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
@@ -298,7 +298,7 @@ export default function CommunityPage() {
           </div>
           <div className="flex gap-2 w-full sm:w-auto">
             <a
-              href="https://forms.gle/p3hjeCspn4U4PR8A8"
+              href="https://forms.gle/BCQM5u54ojwPhCNi8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
