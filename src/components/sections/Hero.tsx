@@ -148,7 +148,7 @@ export function Hero() {
               className="block p-5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-emerald-500/30 transition-colors duration-300 group"
             >
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">募集中</span>
+                <span className="text-xs text-amber-300 bg-amber-900/30 border border-amber-500/30 px-2 py-0.5 rounded-full">募集中</span>
               </div>
               <p className="text-[#f5f5f5] font-bold text-lg leading-tight mb-2">
                 アプリをよくする会（iOS）
