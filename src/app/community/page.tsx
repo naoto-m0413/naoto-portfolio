@@ -114,7 +114,7 @@ export default function CommunityPage() {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
                 >
                   発表枠に申し込む
                 </a>
@@ -122,7 +122,7 @@ export default function CommunityPage() {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors duration-200"
+                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-950/80 border border-emerald-500/30 text-emerald-200 rounded-lg text-sm font-medium hover:bg-emerald-900/80 hover:border-emerald-400/50 transition-all duration-200"
                 >
                   見学枠に申し込む
                 </a>
@@ -254,7 +254,7 @@ export default function CommunityPage() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-500 transition-colors duration-200"
+                className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
               >
                 発表枠に申し込む
               </a>
@@ -268,7 +268,7 @@ export default function CommunityPage() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors duration-200"
+                className="inline-flex w-full items-center justify-center gap-2 px-4 py-2.5 bg-emerald-950/80 border border-emerald-500/30 text-emerald-200 rounded-lg text-sm font-medium hover:bg-emerald-900/80 hover:border-emerald-400/50 transition-all duration-200"
               >
                 見学枠に申し込む
               </a>
