@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     description: "アプリを作り、発信し、形にしていく人のポートフォリオサイト。",
     images: ["https://naoto-dev.vercel.app/og-image.png"],
   },
+  verification: {
+    google: "pPM9FKpm0IPc859D8dIFY0ywEPHwtuiMguOjOXpOvho",
+  },
 };
 
 export default function RootLayout({
