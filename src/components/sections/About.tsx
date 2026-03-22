@@ -78,6 +78,9 @@ export function About() {
                     <span className="text-[#a3a3a3] text-sm">{cert}</span>
                   </li>
                 ))}
+                <li className="flex justify-end">
+                  <span className="text-[#555] text-xs">など</span>
+                </li>
               </ul>
             </div>
           </motion.div>
