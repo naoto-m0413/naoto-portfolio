@@ -19,23 +19,6 @@ export type App = {
 
 export const apps: App[] = [
   {
-    id: "hensinshuraba",
-    name: "返信修羅場",
-    tagline: "修羅場を乗り越える返信タイピングゲーム",
-    description:
-      "既読無視がバレた、浮気がバレた夜、記念日を忘れたなど、修羅場シナリオの「正解の返信」を素早くタイピングするiOSゲームアプリです。制限時間内にミスなく打ち込み、最高ランクSを目指してください。",
-    problem:
-      "「あの状況、どう返せばよかったんだろう」という後悔や笑いをゲームに昇華したいと考えました。リアルなシナリオに緊張感を持って挑戦できる体験を、シンプルなタイピング操作で形にしています。",
-    challenge:
-      "チャット画面風のUIでシナリオ没入感を高め、文字ごとにハイライトが進むタイピング演出で達成感を演出しています。クリアタイムとミス数でSからDのランクを算出し、10種類の実績システムで繰り返し遊べる設計にしています。",
-    techs: ["Swift", "SwiftUI"],
-    status: "審査中",
-    links: {
-      terms: "/hensinshuraba/terms",
-      privacy: "/hensinshuraba/privacy",
-    },
-  },
-  {
     id: "atodevaru",
     name: "アトデヤル",
     tagline: "行動できるToDoリスト",
