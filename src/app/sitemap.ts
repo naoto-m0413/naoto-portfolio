@@ -4,6 +4,8 @@ import { siteUrl } from "@/lib/site";
 const sitemapRoutes = [
   "",
   "/community",
+  "/hensinshuraba/terms",
+  "/hensinshuraba/privacy",
   "/teijitaiping/terms",
   "/teijitaiping/privacy",
   "/atodeyaru/support",

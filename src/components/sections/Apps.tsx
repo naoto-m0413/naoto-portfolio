@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { apps } from "@/data/apps";
 import Image from "next/image";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, FileText, Shield } from "lucide-react";
 
 const statusStyles: Record<string, string> = {
   公開中: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
@@ -77,30 +77,54 @@ function AppCard({ app }: { app: (typeof apps)[number] }) {
         </div>
 
         {/* Links */}
-        <div className="flex gap-2 pt-2 border-t border-[#2a2a2a]">
-          {app.links.demo || app.links.github ? (
-            <>
-              {app.links.demo && (
+        <div className="flex flex-col gap-2 pt-2 border-t border-[#2a2a2a]">
+          <div className="flex gap-2">
+            {app.links.demo || app.links.github ? (
+              <>
+                {app.links.demo && (
+                  <a
+                    href={app.links.demo}
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-blue-600 text-white rounded-lg text-xs font-medium hover:bg-blue-500 transition-colors"
+                  >
+                    <ExternalLink size={13} />
+                    App Store
+                  </a>
+                )}
+                {app.links.github && (
+                  <a
+                    href={app.links.github}
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 border border-[#2a2a2a] text-[#a3a3a3] rounded-lg text-xs font-medium hover:text-[#f5f5f5] hover:border-[#3a3a3a] transition-colors"
+                  >
+                    <Github size={13} />
+                    GitHub
+                  </a>
+                )}
+              </>
+            ) : (
+              <span className="text-xs text-[#3a3a3a]">{statusLinkLabel[app.status] ?? "準備中"}</span>
+            )}
+          </div>
+          {(app.links.terms || app.links.privacy) && (
+            <div className="flex gap-3">
+              {app.links.terms && (
                 <a
-                  href={app.links.demo}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-blue-600 text-white rounded-lg text-xs font-medium hover:bg-blue-500 transition-colors"
+                  href={app.links.terms}
+                  className="inline-flex items-center gap-1 text-xs text-[#555] hover:text-[#a3a3a3] transition-colors"
                 >
-                  <ExternalLink size={13} />
-                  App Store
+                  <FileText size={11} />
+                  利用規約
                 </a>
               )}
-              {app.links.github && (
+              {app.links.privacy && (
                 <a
-                  href={app.links.github}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 border border-[#2a2a2a] text-[#a3a3a3] rounded-lg text-xs font-medium hover:text-[#f5f5f5] hover:border-[#3a3a3a] transition-colors"
+                  href={app.links.privacy}
+                  className="inline-flex items-center gap-1 text-xs text-[#555] hover:text-[#a3a3a3] transition-colors"
                 >
-                  <Github size={13} />
-                  GitHub
+                  <Shield size={11} />
+                  プライバシーポリシー
                 </a>
               )}
-            </>
-          ) : (
-            <span className="text-xs text-[#3a3a3a]">{statusLinkLabel[app.status] ?? "準備中"}</span>
+            </div>
           )}
         </div>
 
