@@ -126,9 +126,9 @@ export function Hero() {
               whileHover={{ borderColor: "rgba(59,130,246,0.4)", backgroundColor: "rgba(59,130,246,0.05)" }}
               className="lg:hidden flex items-center gap-3 mt-5 px-4 py-3 rounded-xl border border-[#2a2a2a] bg-[#171717]/60 transition-colors duration-200 group w-fit"
             >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-[#555] flex-shrink-0" />
               <span className="text-sm text-[#a3a3a3] group-hover:text-[#f5f5f5] transition-colors duration-200">
-                <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span>、参加募集中です
+                <span className="text-[#f5f5f5] font-medium">アプリをよくする会（iOS）</span>、次回準備中です
               </span>
               <span className="text-[#555] text-xs group-hover:text-blue-400 transition-colors duration-200">→</span>
             </motion.a>
@@ -148,7 +148,7 @@ export function Hero() {
               className="block p-5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-emerald-500/30 transition-colors duration-300 group"
             >
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs text-amber-300 bg-amber-900/30 border border-amber-500/30 px-2 py-0.5 rounded-full">募集中</span>
+                <span className="text-xs text-[#a3a3a3] bg-[#1e1e1e] border border-[#2a2a2a] px-2 py-0.5 rounded-full">次回準備中</span>
               </div>
               <p className="text-[#f5f5f5] font-bold text-lg leading-tight mb-2">
                 アプリをよくする会（iOS）
@@ -156,8 +156,8 @@ export function Hero() {
               <p className="text-[#a3a3a3] text-xs leading-relaxed mb-3">
                 アプリやアイデアを持ち寄って、感想や改善案を出し合うオンラインの会です。<br className="hidden lg:block" />新しい気づきを得ながら、個人開発者同士で交流できる場を目指しています。
               </p>
-              <span className="text-xs text-blue-400">
-                詳細・参加申し込み →
+              <span className="text-xs text-[#a3a3a3]">
+                詳細を見る →
               </span>
             </motion.a>
 

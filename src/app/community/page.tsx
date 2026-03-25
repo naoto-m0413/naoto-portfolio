@@ -82,8 +82,8 @@ export default function CommunityPage() {
         {/* Hero */}
         <section className="space-y-5">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-xs text-amber-300 bg-amber-900/30 border border-amber-500/30 px-3 py-1 rounded-full font-medium">
-              募集中
+            <span className="text-xs text-[#a3a3a3] bg-[#1e1e1e] border border-[#2a2a2a] px-3 py-1 rounded-full font-medium">
+              受付終了
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
@@ -107,25 +107,10 @@ export default function CommunityPage() {
                   <p className="text-sm font-medium text-[#f5f5f5]">3/25（水）20:00〜21:30</p>
                   <p className="text-sm text-[#a3a3a3] mt-0.5">オンライン（Discord）</p>
                 </div>
-                <span className="text-xs text-amber-300 bg-amber-900/30 border border-amber-500/30 px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">募集中</span>
+                <span className="text-xs text-[#a3a3a3] bg-[#1e1e1e] border border-[#2a2a2a] px-2 py-0.5 rounded-full font-medium flex-shrink-0 ml-4">受付終了</span>
               </div>
-              <div className="border-t border-[#2a2a2a] pt-3 flex flex-col sm:flex-row gap-2">
-                <a
-                  href="https://forms.gle/BCQM5u54ojwPhCNi8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
-                >
-                  発表枠に申し込む
-                </a>
-                <a
-                  href="https://forms.gle/2oH79MoUUuJzjb2J9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-950/80 border border-emerald-500/30 text-emerald-200 rounded-lg text-sm font-medium hover:bg-emerald-900/80 hover:border-emerald-400/50 transition-all duration-200"
-                >
-                  見学枠に申し込む
-                </a>
+              <div className="border-t border-[#2a2a2a] pt-3">
+                <p className="text-sm text-[#555] text-center">3/25（水）の受付は締め切りました</p>
               </div>
             </div>
           </div>
@@ -292,27 +277,9 @@ export default function CommunityPage() {
       {/* Sticky bottom bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#2a2a2a] bg-[#0b0b0b]/90 backdrop-blur-md">
         <div className="max-w-3xl mx-auto px-6 py-3 flex items-center justify-between gap-3">
-          <div className="hidden sm:block shrink-0">
-            <p className="text-sm font-medium text-[#f5f5f5]">参加申込受付中</p>
-            <p className="text-xs text-[#a3a3a3]">先着順・事前申込制</p>
-          </div>
-          <div className="flex gap-2 w-full sm:w-auto">
-            <a
-              href="https://forms.gle/BCQM5u54ojwPhCNi8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-blue-950/80 border border-blue-500/30 text-blue-200 rounded-lg text-sm font-medium hover:bg-blue-900/80 hover:border-blue-400/50 transition-all duration-200"
-            >
-              発表枠に申し込む
-            </a>
-            <a
-              href="https://forms.gle/2oH79MoUUuJzjb2J9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 sm:flex-none text-center inline-flex items-center justify-center px-4 py-2.5 bg-emerald-950/80 border border-emerald-500/30 text-emerald-200 rounded-lg text-sm font-medium hover:bg-emerald-900/80 hover:border-emerald-400/50 transition-all duration-200"
-            >
-              見学枠に申し込む
-            </a>
+          <div className="w-full text-center">
+            <p className="text-sm font-medium text-[#a3a3a3]">3/25（水）の受付は締め切りました</p>
+            <p className="text-xs text-[#555]">次回開催をお楽しみに</p>
           </div>
         </div>
       </div>
