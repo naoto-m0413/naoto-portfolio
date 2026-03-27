@@ -44,8 +44,10 @@ export const apps: App[] = [
     challenge:
       "ただ進捗を表示するだけでなく、少しの焦りや緊張感が自然に生まれる見せ方を意識しています。不快になりすぎないよう情報はシンプルに整理し、毎日見ても負担になりにくいミニマルなUIにまとめることを目指しています。",
     techs: ["Swift", "SwiftUI"],
-    status: "開発中",
+    status: "公開中",
     icon: "/apps/ikiisouge.png",
-    links: {},
+    links: {
+      demo: "https://apps.apple.com/jp/app/%E7%94%9F%E3%81%8D%E6%80%A5%E3%81%92/id6760989995",
+    },
   },
 ];

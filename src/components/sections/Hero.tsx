@@ -181,7 +181,10 @@ export function Hero() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
               >
-                <motion.div
+                <motion.a
+                  href={app.links.demo ?? undefined}
+                  target={app.links.demo ? "_blank" : undefined}
+                  rel={app.links.demo ? "noopener noreferrer" : undefined}
                   animate={{ y: [0, -6, 0] }}
                   transition={{
                     repeat: Infinity,
@@ -190,7 +193,7 @@ export function Hero() {
                     delay: i * 1.6,
                   }}
                   whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-                  className="p-3.5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-blue-500/30 transition-colors duration-300 cursor-default"
+                  className={`block p-3.5 rounded-2xl bg-[#171717] border border-[#2a2a2a] hover:border-blue-500/30 transition-colors duration-300 ${app.links.demo ? "cursor-pointer" : "cursor-default"}`}
                 >
                   <div className="flex items-center gap-3 mb-2.5">
                     {app.icon && (
@@ -227,7 +230,7 @@ export function Hero() {
                       </span>
                     ))}
                   </div>
-                </motion.div>
+                </motion.a>
               </motion.div>
             ))}
 
